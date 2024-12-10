@@ -40,7 +40,8 @@
         }
 
         // Change video on key press
-        document.addEventListener('keydown', loadNextVideo)
+        document.addEventListener('keydown', loadNextVideo);
+        document.addEventListener('mousedown', loadNextVideo);
         
         // Initial load
         loadNextVideo();
