@@ -39,6 +39,9 @@
             currentIndex = (currentIndex + 1) % urls.length;
         }
 
+        // Change video on key press
+        document.addEventListener('keydown', loadNextVideo)
+        
         // Initial load
         loadNextVideo();
 
