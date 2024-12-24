@@ -26,8 +26,10 @@
         const urls = [
             "https://www.youtube.com/embed/RmedaAhvMgQ?autoplay=1",
             "https://www.youtube.com/embed/FslCeCp1GqM?autoplay=1",
-            "https://www.youtube.com/embed/VGlYxtkZUXI?autoplay=1",
+            //"https://www.youtube.com/embed/VGlYxtkZUXI?autoplay=1",
             "https://www.youtube.com/embed/OT2S4jATR2s?autoplay=1",
+            "https://www.youtube.com/embed/VbTsyHH_7xU?autoplay=1",
+            "https://www.youtube.com/embed/-3rHve7_5VM?autoplay=1",
             "https://www.youtube.com/embed/SnhGp-LyVCs?autoplay=1"
         ];
 
@@ -39,15 +41,15 @@
             currentIndex = (currentIndex + 1) % urls.length;
         }
 
-        // Change video on key press
+        //// Change video on key press
         document.addEventListener('keydown', loadNextVideo);
-        document.addEventListener('mousedown', loadNextVideo);
+        // document.addEventListener('mousedown', loadNextVideo);
         
         // Initial load
         loadNextVideo();
 
         // Change video every minute
-        setInterval(loadNextVideo, 300000);
+        //setInterval(loadNextVideo, 300000);
     </script>
 </body>
 </html>
